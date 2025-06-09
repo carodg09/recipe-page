@@ -1,0 +1,188 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--Stone-600);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: var(--Stone-100);
+}
+
+main {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+
+}
+
+h1 {
+    color: var(--Stone-900);
+    font-size: 2.5rem;
+    font-family: 'Young Serif', san-serif;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-family: 'Young Serif', sans-serif;
+    color: var(--Brown-800);
+}
+
+h4 {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: var(--Rose-800);
+    margin: 0.5rem 0;
+}
+
+ul,
+ol {
+    padding: 0 1rem;
+}
+
+ul li,
+ol li {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    height: 2.5rem;
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+td:nth-child(2) {
+    color: var(--Brown-800);
+    font-weight: 700;
+}
+
+/* --------------------------------------      
+WHITE CONTAINER        
+-------------------------------------- */
+
+.ui-container {
+    background-color: var(--White);
+    max-width: 46rem;
+    margin: 5rem auto 3rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+}
+
+.ui-container img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+@media (max-width:768px) {
+    .ui-container {
+        box-sizing:border-box;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        padding: 2.5rem;
+        position: relative;;
+    }
+
+    .ui-container img {
+        border-radius: 0;
+        width: calc(100% + 5rem);
+        margin: -2.5rem 0 2.5rem -2.5rem;
+
+    }
+}
+
+/* --------------------------------------      
+DIVIDER        
+-------------------------------------- */
+hr.solid {
+    border-top: 1px solid var(--Stone-150);
+}
+
+/* --------------------------------------      
+PREPARATION TIME SECTION          
+-------------------------------------- */
+
+.time {
+    background-color: var(--Rose-50);
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    margin: 2.5rem 0;
+}
+
+ul.time-list li::marker {
+    color: var(--Rose-800);
+
+}
+
+/* --------------------------------------      
+INGREDIENT SECTION          
+-------------------------------------- */
+.ingredients {
+    margin: 2.5rem 0;
+}
+
+ul.ingredients-list {
+    list-style-type: square;
+}
+
+/* --------------------------------------      
+INSTRUCTION SECTION          
+-------------------------------------- */
+
+.instructions {
+    margin: 2.5rem 0;
+}
+
+ol.instructions-list li::marker {
+    font-weight: 700;
+    color: var(--Brown-800);
+}
+
+/* --------------------------------------      
+NUTRITION SECTION          
+-------------------------------------- */
+
+.nutrition {
+    margin: 2.5rem 0;
+}
+
+/* --------------------------------------      
+ATTRIBUTION SECTION          
+-------------------------------------- */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-size: 0.8rem;
+}
